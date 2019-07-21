@@ -19,6 +19,7 @@ snake2=8
 snake3=15
 
 color.write('Snake & Ladder Game\n',"STRING")
+print("press 'd' and Press Enter to Roll the Dice")
 print('Score starts with:',score)
 color.write('Ladder scores: 10,6,15 \n','STRING')
 color.write('Snake scores: 6,8,15 \n',"COMMENT")
@@ -26,6 +27,7 @@ color.write('Snake scores: 6,8,15 \n',"COMMENT")
 color.write('======= Good Luck ======\n','STRING')
 
 msg ='you Win'
+count =0
 while True:
     if score ==target:
         color.write(msg.center(25,'#'),"STRING")
@@ -91,6 +93,9 @@ while True:
             
     else:
             color.write("Wrong Input..Please press 'd' \n",'COMMENT')
+    count+=1
+ print("\n No.of Dice Rolled:",count)
+
 
  
     
